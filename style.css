@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #111827;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0d1525;
+    color: white;
+    padding: 15px 10px;
+}
+
+h1 {
+    font-size: 28px;
+    color: white;
+}
+
+.user {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 60px;
+    margin-top: 20px;
+}
+
+.user--card {
+    width: 200px;
+    background: #1f2937;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background: rgba(154, 168, 194, 0.71);
+    }
+}
+
+h2 {
+    color: white;
+    padding: 0 0 10px 0;
+}
+
+p {
+    color: #9ca3af;
+    padding: 5px 0;
+}
+span{
+    color: red;
+}
+.userModal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(17, 24, 39, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: .3s;
+}
+.userModal--card{
+    color: white;
+    background: #1f2937;
+    padding: 30px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    h1{
+        padding: 0 0 10px 0;
+    }
+}
+.input{
+    padding: 7px;
+    border-radius: 10px;
+    outline: none;
+}
+
+@media (max-width: 1140px) {
+    .container{
+        width: 90%;
+    }
+    .user{
+        /*gap: 40px 140px;*/
+        justify-content: space-between;
+    }
+}
+@media (max-width: 933px) {
+    .user{
+        gap: 40px 30px;
+    }
+}
+@media (max-width: 867px) {
+    .user{
+        gap: 40px 10px;
+    }
+}
+@media (max-width: 822px) {
+    .user{
+        justify-content: center;
+        gap:30px;
+    }
+}
